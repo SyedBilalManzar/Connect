@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Connect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <style>
+  
+    .tooglebutton
+    {
+    position: absolute;
+    top: 0px;
+    background: #ff8800;
+    border: 0px;
+    right: 87px;
+    color: #fff;
+    font-weight: bold;
+    }
+  .display-none{
+    display: none;
+
+  }
+  .mystyle {
+    width: 100%;
+    /* padding: 10px; */
+    font-size: arial;
+    font-weight: bold;
+     padding: 0px 45px  1px 88px;
+    letter-spacing: 1px;
+    background-color: #ff8800;
+    color: #fff;
+   text-align: center;
+    font-size: 18px;
+  
+  }
+  #nav2 .nav-link {
+    color: white !important;
+  }
+  ul#top-nav-support li {
+    margin-top: 38px;
+    padding: 0px 8px;
+}
+ul#top-nav-support li p i {
+    padding: 1px 9px;
+    color: #ea881b;
+}
+ul#top-nav-support li p span {
+    font-style: italic;
+    font-size: 14px;
+}
+.myDiv#emptydiv2{
+
+  color: #ea881b;
+}
+.border-top-nav{
+  border-top: 4px solid #f80;
+  
+} 
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 450px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+
+}
+
+/* cell number */
+.carousel-cell:after {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 400px;
+  font-size: 80px;
+  color: white;
+}
+  </style>
+</head>
+<body>
+
+  <div id="myDIV" class="display-none">
+    Connect Users may face service degradation due to some issue at Upstream Provider, meanwhile, teams are working to resolve this issue at their earliest.
+  </div>
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg border-top-nav" id="">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="/source/LOGO.png"></a> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="top-nav-support">
+            <li><p><sup><span>24/7 support</span><i class="fa fa-phone" aria-hidden="true"></i>03112324278</sup></P></li>
+              <li><p><sup><i class="fa fa-envelope-o" aria-hidden="true"></i>abc@gmail.com</sup></p></li>
+        </ul>
+        <form class="d-flex">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <button class="btn btn-outline-success tooglebutton" onclick="myFunction()"><i class="fa fa-angle-double-down" id="toggle-icon" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" id="">
+    <div class="container-fluid">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="nav2" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">COMPANY</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SERVICES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item"  href="#">D1</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">D2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">D3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">SUPPORT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">CONTACT US</a>
+          </li> 
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" class="nav-link text-white"><i class="fa fa-lock" aria-hidden="true"></i> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cell">
+    <img src="/source/5.jpg" alt="source-1">
+  </div>
+  <div class="carousel-cell">
+    <img src="/source/5.jpg" alt="source-2">
+  </div>
+  <div class="carousel-cell">
+    <img src="/source/5.jpg" alt="source-3">
+  </div>
+
+</div>  
+<script src="assets/js/javascript.js"></script>
+</body>
+</html>
+
+
+
