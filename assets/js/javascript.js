@@ -7,3 +7,9 @@ function myFunction() {
     icon.classList.toggle("fa-angle-double-up");
   }
   
+  fi.addEventListener('mouseover',fun1);
+  function fun1(){
+    console.log(1111)
+    
+  }
+  

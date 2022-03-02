@@ -4,6 +4,7 @@
   <title>Connect</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/source/fav.ico" type="image/x-icon">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -89,6 +90,60 @@ body { font-family: sans-serif; }
   font-size: 80px;
   color: white;
 }
+.divclassorange
+{
+  height: 115px;
+background-color: #f80;
+text-align: center;
+    font-size: 25px;
+    padding: 12px 120px 12px 102px;
+
+}
+
+.img-responsive{
+  width: 100%;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  text-decoration-color: #000;
+  font-size: 16px;
+  text-decoration-color: #000 !important;
+  padding: 16px 32px;
+}
   </style>
 </head>
 <body>
@@ -171,8 +226,46 @@ body { font-family: sans-serif; }
   <div class="carousel-cell">
     <img src="/source/5.jpg" alt="source-3">
   </div>
+</div >  
+<div class="divclassorange">            
 
-</div>  
+All of us at Connect Communications understand that we will have to work harder and smarter every day to keep you as our customer.
+
+</div>
+
+  <div class="row mt-4 p-2 container  " >
+    <!-- <div class="col-sm-3" id="fi"  >
+      <img src="/source/4.jpg" alt="img1" class="img-responsive" > -->
+      <div class="container img-responsive col-sm-3 ">
+        <img src="/source/4.jpg" alt="Avatar" class="image" h>
+        <div class="middle">
+          <div class="text">John Doe</div>
+      </div>
+      <h5>Residential Broadband Internet</h5>
+      <h6>High Speed Internet up to 100 Mbps..</h6>
+    </div>
+    <div class="container img-responsive col-sm-3 ">
+      <img src="/source/4.jpg" alt="Avatar" class="image" h>
+      <div class="middle">
+        <div class="text">John Doe</div>
+    </div>
+      <h5>Dedicated Internet Access</h5>
+      <h6>Fast and Affordable for Business.t</h6>
+    </div>
+    <div class="container img-responsive col-sm-3 ">
+      <img src="/source/4.jpg" alt="Avatar" class="image" h>
+      <div class="middle">
+        <div class="text">John Doe</div>
+    </div>
+      <h5>Data Connectivity</h5>
+      <h6>Build your own Private Connection.</h6>
+    </div>
+    <div class="col-sm-3">
+      <img src="/source/4.jpg" alt="img1" class="img-responsive">
+      <h5>Business Solutions</h5>
+      <h6>Virtual LAN, Optical Fibre Dark Core etc...</h6>
+    </div>
+  </div>
 <script src="assets/js/javascript.js"></script>
 </body>
 </html>
